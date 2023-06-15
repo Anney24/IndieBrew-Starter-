@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+.linear{
+    background: linear-gradient(to bottom, rgb(247, 222, 247),rgb(240, 238, 240));
+    height: 100vh;
+}
+
+.section{
+    padding: 20px 9%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li:last-child{
+    margin-right: 0;
+}
+a{
+    color: #000;
+    font-size: 1.5rem;
+}
+ul .style{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(123, 14, 224);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.main-sect{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-text{
+  flex: 1;  
+}
+.main-text h1{
+    font-size: 4.5rem;
+}
+.main-text p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 10px 0;
+}
+.avatar img{
+    margin-top: 10px;
+}
+.main-image{
+    max-width: 350px;
+}
+.main-image img{
+    width: 100%;
+}
+span{
+    color: rgb(123, 14, 224);
+}
+.social-icon{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-text{
+    flex: 1;
+    max-width: 450px;
+}
+.social-text h2{
+    font-size: 4rem;
+}
+.social-text p{
+    font-size: 1.6rem;
+    padding: 10px 0;
+    
+}
+.social-icon-img{
+    max-width: 350px;
+ }
+.social-icon-img img{
+   width: 100%;
+}
+.link{
+    color: rgb(123, 14, 224);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.Phone-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone-text h2{
+    font-size: 4rem;
+}
+.phone-text p{
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+.phone-image {
+    max-width: 350px;
+}
+.phone-image img {
+    width: 100%;
+}
+footer{
+    background: rgb(252, 227, 252);
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.other-link{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.list-link h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.list-link p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.list-link ul li{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.left{
+    padding: 30px 0;
+}
+nav.mobile-nav,
+.mobile-menu-container{
+    display: none;
+}
+@media (max-width: 850px){
+    .linear{
+        height: auto;
+        width: 100%;
+    }
+    .main-sect{
+        flex-direction: column-reverse;
+    }
+    
+    
+    .other-link{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px){
+    nav {
+        display: none;
+    }
+    nav.mobile-nav{
+        display: flex;
+    }
+
+    .mobile-menu-container{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background: rgb(123, 14, 224);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: all 400ms ease;
+    }
+    .mobile-menu-container.active{
+        left: 0;
+    }
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        top: 32px;
+        right: 50px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 400ms ease;
+    }
+    .mobile-menu-container .close-icon img{
+        width: 20px;
+    }
+    .mobile-menu-container.active  .close-icon{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .mobile-menu-container ul{
+        list-style: none;
+        padding: 0;
+    }
+    .mobile-menu-container ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .mobile-menu-container ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .social-icon{
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 50px;
+    }
+    .Phone-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .link{
+        display: flex;
+    }
+    footer .list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

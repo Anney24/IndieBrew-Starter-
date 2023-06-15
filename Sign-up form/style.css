@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background: linear-gradient(to bottom, rgb(247, 222, 247),rgb(240, 238, 240));
+    height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 9%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 10px;
+    color: black;
+
+}
+nav div{
+    padding-left: 6px;
+}
+nav ul img{
+    border: 1px solid rgb(187, 180, 180);
+    padding: 5px 10px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero-content{
+    width: 400px;
+}
+.hero-content h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.hero-content ul li{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.hero-form {
+    background: #ffffff;
+    height: 480px;
+    width: 400px;
+    padding: 30px ;
+    border-radius: 8px;
+}
+
+.hero-form h3{
+    font-size: 23px;
+}
+
+.input-checkbox label{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.input-control,
+.input-checkbox{
+    margin: 15px 0;
+}
+.input-control input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 0;
+    border: 1px solid rgb(85, 80, 80);
+    border-radius: 5px;
+}
+.input-control label{
+    font-size: 16px;
+    font-weight: bold;
+}
+button{
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    background: rgb(123, 14, 224);
+}
+
+@media (max-width: 850px){
+    .container{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    section{
+        height: auto;
+    }
+    .hero-section{
+        flex-direction: column;
+       
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-form{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 500px){
+    .container{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    nav ul div{
+        display: none;
+    }
+}

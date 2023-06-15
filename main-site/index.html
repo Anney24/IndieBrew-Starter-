@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="linear">
+        <div class="section">
+            <nav>
+                <div class="logo">
+                    <img src="../Assets/Logo.svg" alt="logo">
+                </div>
+               
+                <ul class="nav-container">
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#get-started" class="style">Get Started- it's free</a></li>
+                </ul>
+            </nav>
+            <!-- End of desktop navigation menu -->
+            <nav class="mobile-nav">
+                <div class="logo">
+                    <img src="../Assets/Logo.svg" alt="logo">
+                </div>
+                <div class="menu-icon">
+                    <img src="../Assets/Hamburger Menu.svg" alt="">
+                </div>
+            </nav>
+    
+            <div class="mobile-menu-container">
+                <div class="close-icon">
+                    <img src="../Assets/Close.svg" alt="">
+                </div>
+                <ul>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#get-started" class="style">Get Started- it's free</a></li>
+                </ul>
+            </div>
+    
+            <!-- End of mobile navigation menu -->
+            <div class="main-sect">
+                <div class="main-text">
+                    <h1>Your Weekly personal feed digest.</h1>
+                    <p>With IndieBrew, get personal feeds from resources all around 
+                       the web, including Reddit, HackerNews, IndieHackers, and much more.
+                    </p>
+                    <a href="#get-started" class="style">Get Started- it's free</a>
+                    <div class="avatar">
+                        <img src="../Assets/User Avatars.svg" alt="">
+                    </div>
+                    <p>Join <span>32,642</span> IndieBrewers in curating their personal digest.</p>
+                </div>
+                <div class="main-image">
+                    <img src="../Assets/Feed Mockup.png" alt="Phone-mock">
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    
+    <section class="social-icon section">
+        <div class="social-text">
+            <h2>Curate your feed from dozens of resources.</h2>
+            <p>We cover all major platforms where one could want to curate their feed from. Reddit, ProductHunt, IndieHackers, and so much more.</p>
+            <a href="#" class="link">See full list of resources &rightarrow;</a>
+        </div>
+        <div class="social-icon-img">
+            <img src="../Assets/Social Media Icons.png" alt="">
+        </div>
+    </section>
+    <section class="Phone-section section">
+        <div class="phone-image">
+            <img src="../Assets/Phone Mockup.png" alt="">
+        </div>
+        <div class="phone-text">
+            <h2>Access your feed from the comfort of your phone.</h2>
+            <p>With native apps for both iOS and Android, accessing your curated.
+                content has never been easier.</p>
+            <a href="../Sign-up form/sign-up.html" class="link">Sign up for the waistlist &rightarrow;</a>
+        </div>
+    </section>
+    <footer>
+        <div class="list section">
+            <div class="list-link">
+                <h3>IndieBrew</h3>
+                <p>With IndieBrew, get personal feeds from resources all around the web,
+                including Reddit, HackerNews, and much more.
+                </p>
+                <p class="left">Made with &hearts; from Hidee-y</p>
+                
+            </div>
+            <div class="other-link">
+                <div class="list-link">
+                    <h3>Sitemap</h3>
+                    <ul>
+                        <li>Homepage</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="list-link">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Support</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="list-link">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Customers</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="list-link">
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li>HackerNews</li>
+                        <li>Reddit</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector(".menu-icon");
+        const closeIcon = document.querySelector(".mobile-menu-container .close-icon");
+        const mobileMenu = document.querySelector(".mobile-menu-container") 
+
+       
+        menuIcon.addEventListener('click',()=>{
+            mobileMenu.classList.add('active')
+        })
+        closeIcon.addEventListener('click',()=> {
+            mobileMenu.classList.remove('active')
+        })
+    </script>
+   
+    
+</body>
+</html>
